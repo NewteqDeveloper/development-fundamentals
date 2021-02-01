@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MetaPrinciples.Animals
+{
+    public class Cow : Animal
+    {
+        public override AnimalType Type => AnimalType.Cow;
+
+        public string MakeSound()
+        {
+            return "Mooo!";
+        }
+    }
+}
