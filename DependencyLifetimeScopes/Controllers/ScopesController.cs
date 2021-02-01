@@ -12,13 +12,13 @@ namespace DependencyLifetimeScopes.Controllers
     [Route("[controller]")]
     public class ScopesController : ControllerBase
     {
-        private readonly IOne testingServiceOne;
-        private readonly ITwo testingServiceTwo;
+        private readonly IServiceOne testingServiceOne;
+        private readonly IServiceTwo testingServiceTwo;
         private readonly ISingleton singleton;
         private readonly IScoped scoped;
         private readonly ITransient transient;
 
-        public ScopesController(IOne testingServiceOne, ITwo testingServiceTwo, ISingleton singleton, IScoped scoped, ITransient transient)
+        public ScopesController(IServiceOne testingServiceOne, IServiceTwo testingServiceTwo, ISingleton singleton, IScoped scoped, ITransient transient)
         {
             this.testingServiceOne = testingServiceOne;
             this.testingServiceTwo = testingServiceTwo;

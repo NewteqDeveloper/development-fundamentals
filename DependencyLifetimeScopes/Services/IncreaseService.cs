@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace DependencyLifetimeScopes.Services
+﻿namespace DependencyLifetimeScopes.Services
 {
-    public class LifetimeTwoService : ITwo
+    public class IncreaseService : IServiceOne, IServiceTwo
     {
         private readonly ISingleton singleton;
         private readonly IScoped scoped;
         private readonly ITransient transient;
 
-        public LifetimeTwoService(ISingleton singleton, IScoped scoped, ITransient transient)
+        public IncreaseService(ISingleton singleton, IScoped scoped, ITransient transient)
         {
             this.singleton = singleton;
             this.scoped = scoped;

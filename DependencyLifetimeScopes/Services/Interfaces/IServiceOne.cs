@@ -1,6 +1,6 @@
 ﻿namespace DependencyLifetimeScopes.Services
 {
-    public interface ITransient : ICounter
+    public interface IServiceOne : IIncrease
     {
     }
 }
