@@ -34,12 +34,12 @@ namespace DependencyLifetimeScopes.Controllers
             return Ok();
         }
 
-        [HttpPost("increaseBy")]
-        public IActionResult IncreaseBy([FromQuery] int number)
-        {
-            this.testingServiceOne.Increase(number);
-            return Ok();
-        }
+        //[HttpPost("increaseBy")]
+        //public IActionResult IncreaseBy([FromQuery] int number)
+        //{
+        //    this.testingServiceOne.Increase(number);
+        //    return Ok();
+        //}
 
         [HttpGet("transient")]
         public IActionResult Transient()
